@@ -21,5 +21,18 @@
     "psr-0": {
       "Dravencms\\": "src/"
     }
+  },
+  "extra": {
+    "dravencms": {
+      "configuration": {
+        "extensions": {
+          "recaptcha": "Minetro\\Forms\\reCAPTCHA\\ReCaptchaExtension"
+        },
+        "recaptcha": {
+          "secretKey": "6LdOoBkTAAAAAK5vuX56DGSzC-FjwOykZzCyl56S",
+          "siteKey": "6LdOoBkTAAAAAIng2AbxFBxgoe5riNb4cxqESxrW"
+        }
+      }
+    }
   }
 }
