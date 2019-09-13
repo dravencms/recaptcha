@@ -27,10 +27,6 @@
       "configuration": {
         "extensions": {
           "recaptcha": "Minetro\\ReCaptcha\\DI\\ReCaptchaExtension"
-        },
-        "recaptcha": {
-          "secretKey": "6LdOoBkTAAAAAK5vuX56DGSzC-FjwOykZzCyl56S",
-          "siteKey": "6LdOoBkTAAAAAIng2AbxFBxgoe5riNb4cxqESxrW"
         }
       }
     }
