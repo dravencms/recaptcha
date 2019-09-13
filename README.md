@@ -8,5 +8,13 @@ The best way to install dravencms/recaptcha is using  [Composer](http://getcompo
 
 
 ```sh
-$ composer require dravencms/recaptcha:@dev
+$ composer require dravencms/recaptcha
+```
+
+After installation add this code to your `app/config/settings.neon`
+
+```neon
+recaptcha:
+	secretKey: 6Lfv2A4UAAAAAPg8HMcwsXXXXXXXXXXXXXXX  # Use your own secretKey
+	siteKey: 6Lfv2A4UAAAAAKkmkrDnXXXXXXXXXXXXXXX  # Use your own site key
 ```
