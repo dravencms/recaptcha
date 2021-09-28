@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "minetro/recaptcha": "^v2.0"
+    "contributte/recaptcha": "^3.4.1"
   },
   "autoload": {
     "psr-0": {
@@ -26,7 +26,7 @@
     "dravencms": {
       "configuration": {
         "extensions": {
-          "recaptcha": "Minetro\\ReCaptcha\\DI\\ReCaptchaExtension"
+          "recaptcha": "Contributte\\ReCaptcha\\DI\\ReCaptchaExtension"
         }
       }
     }
