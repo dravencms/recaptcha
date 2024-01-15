@@ -17,4 +17,5 @@ After installation add this code to your `app/config/settings.neon`
 recaptcha:
 	secretKey: 6Lfv2A4UAAAAAPg8HMcwsXXXXXXXXXXXXXXX  # Use your own secretKey
 	siteKey: 6Lfv2A4UAAAAAKkmkrDnXXXXXXXXXXXXXXX  # Use your own site key
+	minimalScore: 0.5
 ```
