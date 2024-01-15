@@ -15,7 +15,7 @@
     }
   ],
   "require": {
-    "contributte/recaptcha": "^3.4.1"
+    "contributte/recaptcha": "^4.0.2"
   },
   "autoload": {
     "psr-0": {
