@@ -1,6 +1,6 @@
-# DravenCMS recaptcha meta package
+# DravenCMS recaptcha package
 
-This is a Draven CMS recaptcha metapackage
+This is a Draven CMS recaptcha package implementing dravencms/captcha-impl using contributte/recaptcha
 
 ## Instalation
 

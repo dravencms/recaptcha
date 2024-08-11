@@ -14,19 +14,23 @@
       "name": "Adam Schubert"
     }
   ],
+  "provides": {
+    "dravencms/captcha-implementation": "*"
+  },
   "require": {
+    "dravencms/icaptcha": "*",
     "contributte/recaptcha": "^4.0.2"
   },
   "autoload": {
-    "psr-0": {
-      "Dravencms\\": "src/"
+    "psr-4": {
+      "Dravencms\\ReCaptcha\\": "src/"
     }
   },
   "extra": {
     "dravencms": {
       "configuration": {
         "extensions": {
-          "recaptcha": "Contributte\\ReCaptcha\\DI\\ReCaptchaExtension"
+          "recaptcha": "Dravencms\\ReCaptcha\\DI\\ReCaptchaExtension"
         }
       }
     }
