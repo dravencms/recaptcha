@@ -15,7 +15,7 @@
     }
   ],
   "provides": {
-    "dravencms/captcha-implementation": "*"
+    "dravencms/captcha-implementation": "0.0.1"
   },
   "require": {
     "dravencms/icaptcha": "*",
