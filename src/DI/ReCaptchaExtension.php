@@ -2,11 +2,8 @@
 
 namespace Dravencms\ReCaptcha\DI;
 
-use Dravencms\Captcha\Forms\CaptchaBinding;
-use Dravencms\Captcha\CaptchaManager;
-use Dravencms\Captcha\ReCaptchaProvider;
+use Dravencms\ReCaptcha\ReCaptchaProvider;
 use Nette\DI\CompilerExtension;
-use Nette\PhpGenerator\ClassType;
 use Nette\Schema\Expect;
 use Nette\Schema\Schema;
 
