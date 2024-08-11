@@ -18,7 +18,7 @@
     "dravencms/captcha-implementation": "0.0.1"
   },
   "require": {
-    "dravencms/icaptcha": "*",
+    "dravencms/icaptcha": ">=0.0.1",
     "contributte/recaptcha": "^4.0.2"
   },
   "autoload": {
