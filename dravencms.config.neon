@@ -4,6 +4,10 @@ extensions:
 
 webloader:
     js:
-        captcha: 
+        admin: 
+            remoteFiles:
+                - "https://www.google.com/recaptcha/api.js"
+                
+        frontend:
             remoteFiles:
                 - "https://www.google.com/recaptcha/api.js"
