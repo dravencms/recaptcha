@@ -3,6 +3,7 @@
 namespace Dravencms\ReCaptcha;
 
 use Contributte\ReCaptcha\ReCaptchaProvider as ReCaptchaReCaptchaProvider;
+use Dravencms\Captcha\ICaptchaProvider;
 use Dravencms\Captcha\Forms\ICaptchaField;
 use Dravencms\Captcha\Forms\ReCaptchaField;
 
