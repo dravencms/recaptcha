@@ -14,7 +14,7 @@
       "name": "Adam Schubert"
     }
   ],
-  "provides": {
+  "provide": {
     "dravencms/captcha-implementation": "0.0.1"
   },
   "require": {
