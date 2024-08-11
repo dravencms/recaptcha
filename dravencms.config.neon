@@ -1,0 +1,9 @@
+extensions:
+    dravencms.recaptcha: Dravencms\ReCaptcha\DI\ReCaptchaExtension
+
+
+webloader:
+    js:
+        captcha: 
+            remoteFiles:
+                - "https://www.google.com/recaptcha/api.js"

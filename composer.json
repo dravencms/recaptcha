@@ -28,11 +28,7 @@
   },
   "extra": {
     "dravencms": {
-      "configuration": {
-        "extensions": {
-          "recaptcha": "Dravencms\\ReCaptcha\\DI\\ReCaptchaExtension"
-        }
-      }
+      "configuration": "dravencms.config.neon"
     }
   }
 }
