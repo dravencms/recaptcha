@@ -1,21 +1,42 @@
-# DravenCMS recaptcha package
+# DravenCMS reCAPTCHA
 
-This is a Draven CMS recaptcha package implementing dravencms/captcha-impl using contributte/recaptcha
+Google reCAPTCHA provider for `dravencms/captcha`, implemented on top of Contributte reCAPTCHA.
 
-## Instalation
+## Installation
 
-The best way to install dravencms/recaptcha is using  [Composer](http://getcomposer.org/):
-
-
-```sh
-$ composer require dravencms/recaptcha
+```bash
+composer require dravencms/captcha dravencms/recaptcha
 ```
 
-After installation add this code to your `app/config/settings.neon`
+The package configuration adds Google's reCAPTCHA client script to both the admin and frontend WebLoader bundles.
+
+## Configuration
 
 ```neon
-recaptcha:
-	secretKey: 6Lfv2A4UAAAAAPg8HMcwsXXXXXXXXXXXXXXX  # Use your own secretKey
-	siteKey: 6Lfv2A4UAAAAAKkmkrDnXXXXXXXXXXXXXXX  # Use your own site key
-	minimalScore: 0.5
+dravencms.recaptcha:
+    siteKey: your-site-key
+    secretKey: your-secret-key
+    minimalScore: 0.5
+
+dravencms.captcha:
+    provider: @dravencms.recaptcha.provider
 ```
+
+Keep the secret key in local or environment-specific configuration. `minimalScore` accepts a value from `0` to `1` and defaults to `0`.
+
+## Usage
+
+```php
+$form->addCaptcha(
+    name: 'captcha',
+    label: 'Verification',
+    required: true,
+    message: 'The CAPTCHA verification failed.',
+);
+```
+
+The field uses the standard DravenCMS CAPTCHA contract, so application forms do not need to depend directly on Contributte reCAPTCHA classes.
+
+## License
+
+This package is licensed under the LGPL-3.0 license.
